@@ -3,6 +3,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+.wrapper{
+    display: flex;
+    gap: 100px;
+}
 .box{
     width: 600px;
     height: 600px;
@@ -34,4 +38,64 @@
         background-color: yellow;
         height: 100px;
     }
+}
+.box-2{
+    width: 600px;
+    height: 600px;
+    background-color: green;
+    position: relative;
+}
+.two{
+    height: 100px;
+    width: 100px;
+    background-color: yellow;
+    position: absolute;
+    left: 0;
+    top: 0;
+    animation: animationTen 5s linear 1s;
+}
+.three{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-color: red;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    animation: circle 2s linear infinite alternate;
+}
+@keyframes circle{
+    0%{
+        width: 100px;
+        height: 100px;
+    }
+    100%{
+        width: 250px;
+        height: 250px;
+    }
+
+}
+
+@keyframes animationTen{
+   0%{
+    left: 0;
+    top: 0;
+   }
+   25%{
+    left: 500px;
+    top: 0;
+   }
+   50%{
+    left: 500px;
+    top: 500px;
+   }
+   75%{
+    left: 0;
+    top: 500px;
+   }
+   100%{
+    left: 0;
+    top: 0;
+   }
 }
