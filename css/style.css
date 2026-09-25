@@ -23,6 +23,7 @@
     animation-timing-function: linear;
     animation-fill-mode: both;        /* none, forward, backward,both 4 ta value*/
 }
+
 @keyframes round{
     from{
        width: 20px;
@@ -33,5 +34,4 @@
         background-color: yellow;
         height: 100px;
     }
-
 }
