@@ -20,7 +20,8 @@
     animation-delay: 0s;
     animation-iteration-count: 3;   /* ----- 1 dile 1 bar 2 dile 2 bar infinite dile bar bar cholbe animation----*/
     animation-direction: alternate;  /*----- normal,reverse,alternative,alternative-reverse ei 4 ta direction animation er*/
-    animation-timing-function: linear;  
+    animation-timing-function: linear;
+    animation-fill-mode: both;        /* none, forward, backward,both 4 ta value*/
 }
 @keyframes round{
     from{
