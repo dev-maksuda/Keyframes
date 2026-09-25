@@ -3,6 +3,13 @@
     padding: 0;
     box-sizing: border-box;
 }
+h1{
+    font-size: 100px;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 50px;
+    color: blueviolet;
+}
 .wrapper{
     display: flex;
     gap: 100px;
@@ -11,6 +18,7 @@
     width: 600px;
     height: 600px;
     background-color: blueviolet;
+    position: relative;
 }
 .one{
     height: 100px;
@@ -22,16 +30,15 @@
     animation-name: round;
     animation-duration: 5s;
     animation-delay: 0s;
-    animation-iteration-count: 3;   /* ----- 1 dile 1 bar 2 dile 2 bar infinite dile bar bar cholbe animation----*/
+    animation-iteration-count: infinite;   /* ----- 1 dile 1 bar 2 dile 2 bar infinite dile bar bar cholbe animation----*/
     animation-direction: alternate;  /*----- normal,reverse,alternative,alternative-reverse ei 4 ta direction animation er*/
     animation-timing-function: linear;
     animation-fill-mode: both;        /* none, forward, backward,both 4 ta value*/
 }
-
 @keyframes round{
     from{
        width: 20px;
-        background-color: white; 
+        background-color: rgb(205, 31, 221); 
     }
     to{
          width: 400px;
@@ -48,11 +55,11 @@
 .two{
     height: 100px;
     width: 100px;
-    background-color: yellow;
+    background-color: rgb(237, 33, 200);
     position: absolute;
     left: 0;
     top: 0;
-    animation: animationTen 5s linear 1s;
+    animation: animationTen infinite linear 6s;
 }
 .three{
     width: 250px;
