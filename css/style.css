@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.box{
+    width: 600px;
+    height: 600px;
+    background-color: blueviolet;
+}
+.one{
+    height: 100px;
+    width: 100px;
+    background-color: brown;
+    position: absolute;
+    left: 0;
+    top: 0;
+    animation-name: round;
+    animation-duration: 4s;
+}
+@keyframes round{
+
+}
